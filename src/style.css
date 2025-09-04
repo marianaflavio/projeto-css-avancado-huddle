@@ -2,9 +2,10 @@ body{
     background: url('images/bg-desktop.svg') center center no-repeat;
     background-color: var(--cor-de-fundo);
     background-size: cover;
-    
-    min-height: 100vh;  /* ocupa no mínimo a altura da tela */
-    height: auto;       /* deixa crescer só até onde precisa */
+
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
 
     display: grid;
     grid-template-columns: 1fr; /* 1 coluna */
@@ -12,22 +13,12 @@ body{
 }
 
 body .header {
-    padding: 5vh 0 0 5vw; /* ajuste de posicionamento da logo */
-}
-
-body .header .logo {
-    width: 20rem;   /* ocupa 20rem do header na largura */
-    height: auto; /* mantém proporção na altura */
+   padding-top: 50px;
 }
 
 body .conteudo{
     display: flex;
-    padding: 8vh 0 0 5vw;
-}
-
-.conteudo .mockup{
-    width: 60%; /* tamanho ocupado pelo mockup na tela */
-    height: auto;
+    margin: 0 auto;
 }
 
 .conteudo .descricao{
@@ -49,15 +40,14 @@ body .conteudo{
     text-align: left;  
     font-size: 20px;
     width: 100%;
-    margin-bottom: 4vh;
-    padding-right: 25rem; /* Para o parágrafo ter o corte conforme design */
+    margin-bottom: 6vh;
 }
 
 .conteudo .descricao .btn-registro{
     color: var(--cor-de-fundo);
     background-color: #FFF;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 18px;
     padding: 15px 60px;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.3); /* SOMBRA: desloca p/ direita, p/ baixo, borrado, cor */
 }
@@ -68,10 +58,9 @@ body .conteudo{
     transition: 0.3s;
 }
 
-footer .redes-sociais{
+footer ul{
     display: flex;
     justify-content: flex-end;
-    margin-right: 20vw;
     gap: 15px;
 }
 
@@ -85,7 +74,7 @@ footer .redes-sociais{
   border-radius: 50%;
   color: #FFF;
 
-  font-size: 30px; /* tamanho do símbolo (ícone) */
+  font-size: 20px; /* tamanho do símbolo (ícone) */
   line-height: 1; /* evita problema com a altura da linha */
   transition: 0.3s; /* efeito menos duro */
 }
